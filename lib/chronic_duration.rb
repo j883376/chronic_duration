@@ -44,7 +44,7 @@ module ChronicDuration
     month = 30 * day
     year = 31557600
 
-    if seconds >= 31557600 && seconds%year < seconds%month
+    if seconds >= 31557600
       years = seconds / year
       months = seconds % year / month
       days = seconds % year % month / day
